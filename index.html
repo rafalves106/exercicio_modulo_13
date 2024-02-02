@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Exercicio Bootstrap - Módulo 13</title>
+</head>
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+
+    <nav class="navbar bg-dark fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap Logo" height="50">
+                Ebac Photos & Events
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CARROSSEL -->
+
+    <div id="carousel" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/slide-1.jpg" alt="Fotografias">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/slide-2.jpg" alt="Livro de Histórias">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="./images/slide-3.jpg" alt="Foto de Farol">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+        <!-- GRID COM SERVIÇOS -->
+
+        <div id="servicos" class="container">
+            <h3 class="display-6 text-center mb-4">Serviços que Prestamos</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/casamento.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Casamento</h5>
+                            <p class="card-text">Transforme seus momentos especiais em lembranças eternas com nossos serviços de fotografia de eventos...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Momentos únicos, memórias eternas.</li>
+                            <li class="list-group-item">Do 'sim' ao brinde final.</li>
+                            <li class="list-group-item">Cada riso, cada abraço.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/conferencia.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Conferência</h5>
+                            <p class="card-text">Conte conosco para transformar seu evento em uma narrativa visual que perdurará por gerações. Transforme...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Capturamos o poder das ideias.</li>
+                            <li class="list-group-item">Dos insights aos aplausos.</li>
+                            <li class="list-group-item">Imortalize o profissionalismo.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/retratos.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Retratos</h5>
+                            <p class="card-text">Revele sua verdadeira essência através de nossos retratos profissionais. Cada sessão é uma oportunidade...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Revelando autenticidade.</li>
+                            <li class="list-group-item">Seu perfil, nossa arte.</li>
+                            <li class="list-group-item">Sorrisos que duram para sempre.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/produtos.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotos de Produtos</h5>
+                            <p class="card-text">Destaque-se no mercado com imagens que vendem. Nossos serviços de fotografia de produtos elevam a apres...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Destaque-se na multidão.</li>
+                            <li class="list-group-item">Do catálogo à web.</li>
+                            <li class="list-group-item">Imagens que convertem.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/ensaio.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Ensaios Fotográficos</h5>
+                            <p class="card-text">Cada pose é uma expressão única da sua personalidade, e nossas lentes estão prontas para capturar a...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Transformamos momentos em arte</li>
+                            <li class="list-group-item">Cada pose conta uma história.</li>
+                            <li class="list-group-item">Seja você mesmo.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="./services images/imovel.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotografia de Imóveis</h5>
+                            <p class="card-text">Abra as portas virtuais para seu imóvel com nossos serviços especializados em fotografia imobiliária. Cada...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cada espaço conta uma história.</li>
+                            <li class="list-group-item">Imagens que vendem casas.</li>
+                            <li class="list-group-item">Transforme listagens em destaque.</li>
+                        </ul>
+                        <div class="card-body text-bg-dark">
+                            <a href="" class="card-link link-light link-underline-opacity-0 link-underline-opacity-75-hover">Saiba Mais</a>
+                            <a href="" class="card-link link-success link-underline-opacity-0 link-underline-opacity-75-hover">Contratar Este</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
